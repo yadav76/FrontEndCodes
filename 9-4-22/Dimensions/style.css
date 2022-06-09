@@ -1,0 +1,38 @@
+.lh{
+    /* width: 400px;
+    height: 100px; */
+    border: 2px solid red;
+    padding: 20px;
+    margin: 20px;
+    line-height: 30px;
+    max-height: 100px;
+    min-height: 50px;
+    max-width: 200px;
+    min-width: 150px;
+}
+
+.scroll{
+    height: 200px;
+    width:400px;
+    border: 1px solid green;
+    padding: 5px;
+    margin: 5px;
+    overflow: scroll;  /*These gives vertical and horizontal both scroll bars */
+}
+.auto{
+    height: 200px;
+    width:400px;
+    border: 1px solid green;
+    padding: 5px;
+    margin: 5px;
+    overflow: auto;    /* These giver only vertical scroll bar */
+}
+
+.no-show{
+    visibility: hidden;  /* These hide the but text is there and line also there. It takes space on the page*/
+    display: none;   /* These hide the text and also hides the line of that text. It won't take any space on the page */
+}
+
+/* inline vs inline-block : inline-block element respects aur given margin, padding and height and width given to that element.
+whereas inline element does not respect aur margin, paddind, height and width given to that element. It takes only much space that required to the content inside there in that element. */
+/* block vs inline-block : In block element we have line break but in inline-block element we don't have line break. */

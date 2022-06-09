@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form action="www.backend.com/SantoshYadav" target="_blank">
+        <fieldset>
+            <legend>Personal Info</legend>
+                <label for="FirstName">FirstName : </label>
+                <br>
+                <input Type="text" value="Rohan" name="FirstName" autocomplete="off" required>
+                <br>
+                <label for="LastName">LastName : </label>
+                <br> 
+                <input Type="text" value="Yadav" name="LastName" autocomplete="off" required>
+                <br>
+                <label for="countrycode">Country Code: </label>
+                <input type="text" value="country" name="country" patter="[A-Za-z0-9]{3}">
+                <br>
+
+                <label for="Points">Points: </label>
+                <input type="number" value="0" step="3">
+        </fieldset>
+        <fieldset>
+            <legend>EmailInfo </legend>
+                <lable for="Email">Email :</lable>
+                <br>
+                <input type="email" name="email" autocomplete="off" required>
+            
+        </fieldset>
+    </form>
+        <input type="submit" value="Next">    
+    </form>
+    <form>
+        <h1>Radio Buttons</h1>
+        <input type="radio" id="html" name="radio">
+        <label for="html">HTML</label>
+        <br>
+        <input type="radio" id="css" name="radio">
+        <label for="css">CSS</label>
+        <br>
+        <input type="radio" id="JavaScript" name="radio">
+        <label for="JavaScript">HTML</label>
+        <br>
+        
+    </form>
+
+    <form>
+        <h1>Check Boxes</h1>
+        <input type="checkbox" id="java">
+        <label for="java">JAVA</label>
+        <br>
+        <input type="checkbox" id="Python">
+        <label for="Python">PYTHON</label>
+        <br>
+        <input type="checkbox" id=".Net">
+        <label for=".Net">.Net</label>
+        <br>
+    </form>
+
+    <form>
+        <label for="Car">Choose a Car: </label>
+        <select name="Car" size="1">
+            <option value="Volvo">Volvo Car</option>
+            <option value="BMW">BMW Car</option>
+            <option value="Odi">Odi Car</option>
+            <option value="Swift">Swift Car</option>
+        </select>
+
+        <label for="essay">Essay: </label>
+        <br>
+        <textarea name="essayText" id="essay" rows="5" cols="5"></textarea>
+    </form>
+</body>
+</html>

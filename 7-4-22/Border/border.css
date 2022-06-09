@@ -1,0 +1,13 @@
+p.border1{
+    width:200px;
+    height:100px;
+    border: 1px solid red;
+    padding:50px;
+}
+p.border2{
+    border:1px solid green;
+    width:200px;
+    height:100px;
+    box-sizing: border-box;
+    padding:50px;
+}

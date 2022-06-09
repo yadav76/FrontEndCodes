@@ -1,0 +1,14 @@
+.ul-1{
+    list-style-type: square;
+    list-style-position: inside;  /* to start paragraph second line from below the dot of list */
+    /* list-style-image:url()   if i want to add image instead of dot of list then given url of that image */
+    /* list-style: inside lower-roman;  shorthand of list property */
+}
+
+.ol-1{
+    list-style-type:decimal;
+}
+
+button{
+    cursor: pointer;
+}

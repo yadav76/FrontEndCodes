@@ -1,0 +1,19 @@
+.indent{
+    text-indent: 2in;
+}
+
+.align-right{
+    text-align:right;
+}
+
+.align-center{
+    text-align:center;
+}
+
+align-justify{
+    text-align:justify;
+}
+
+.Font{
+    font: bold 50px itlic right serif;
+}

@@ -1,0 +1,59 @@
+.static-p{
+    position: static;
+    border: 3px solid red;
+}
+
+/* relative position means it's position varies from it's original position */
+
+.relative-p{
+    position: relative;  /* These move the element from it's original position from what left,right,botton,up given to it */
+    left:30px;
+    bottom: 60px;
+    border: 3px solid green;
+}
+
+/* fixed position means it's position varies from page position i.e it's consider page as it's parent  */
+
+.fixed-p{
+    position: fixed;  /* This is used when for autobot of page which has fixed position at the bottom right corner. if page scroll down but autobot still there therefore it has fixed position */ 
+    bottom: 0;
+    right: 0;
+    border: 3px solid blue;
+ } 
+
+/* absolute element considers it's relative element as it's parent and varies it's position according to it's relative element and if no relative element is there then it acts like "fixed" positioning and considers page as it's parent element. */
+
+.relative-p2{
+    position: relative;
+    /* position: fixed;       we can set it's position to be "fixed" for below absolute child */
+    width: 300px;
+    height: 500px;
+    border: 2px solid purple;
+}
+
+.absolute-p{
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    border: 2px solid pink;
+}
+
+.div1{
+    border: 2px solid black;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+}
+
+/* absolute positioning is also used when we want to display some text over an image then we can set image position as relative and text position as absolute. */
+
+.sticky-p{
+    position: sticky;
+    border: 2px solid darkgreen;
+    bottom: 0;
+    background-color: brown;
+}
+
+/* sticky positioning is used when we want to stick something at same position all time. If page scrolls then it will be stick on it's position no matter what page scrolls or not. */
