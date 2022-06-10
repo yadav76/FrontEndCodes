@@ -1,0 +1,63 @@
+@media screen and (max-width: 800px){
+    body{
+        width: 500px;
+    }
+}
+
+
+
+body{
+    background: url("https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2014_FallP8/Rami_Portfolio_Period8/unit4_css/project_1folder/cssProject1/background.jpg");
+}
+
+p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
+
+.container{
+    background-color: #333;
+    border-radius: 20px;
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+img{
+    border-radius: 20px;
+    margin-top:20px;
+    margin-left: 20px;
+    opacity: 0.8;
+}
+
+img:hover{
+    opacity: 1;
+}
+
+/* p{
+    background-color: red !important; /* This line makes all <p> tag to red and it is generally not used because it makes design bad so avoid these !important but if necessory then us it 
+} */
+
+:root{
+    --redcolor: red;
+    --fontsize: 25px;
+    --yellowcolor: yellow;
+}
+
+p{
+    background-color: var(--yellowcolor);  /* These is global variable which is defined in :root */
+    --bluecolor: blue;
+    background-color: var(--bluecolor);  /* These is local variable which is defined in <p> tag itself */
+}
+
+@media screen and (max-width:800px){
+    :root{
+        --redcolor: green;
+    }
+    p{
+        --bluecolor: #9ac9ca;
+    }
+}

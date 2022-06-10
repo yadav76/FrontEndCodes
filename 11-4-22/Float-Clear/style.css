@@ -1,0 +1,80 @@
+/* p>img{
+    float: left;
+    margin: 20px;
+} */
+
+/* float is used for positioning and formatting the content. */
+/* 
+.div1{
+    background-color: red;
+}
+
+.div2{
+    background-color: green;
+}
+
+.div3{
+    background-color: blue;
+}
+
+div{
+    float: left;
+} */
+
+
+/*********** Clear Property is used to get element which comes after float element in newline *****************/ 
+
+.div1{
+    border: 2px solid green;
+    float: left;
+    padding: 10px;
+}
+.div2{
+    border: 2px solid red;
+    padding: 10px;  /* This div does not have clear property so it comes in same line after above div1 */
+}
+.div3{
+    border: 2px solid green;
+    float: left;
+    padding: 10px;
+    margin-top: 25px;
+}
+.div4{
+    border: 2px solid green;
+    clear: left;        /* This div have clear property so it comes in another line after above div */
+    padding: 10px;
+}
+
+p>img{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin: 0 20px;
+}
+
+.clear-both{
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.clear-both::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+}
+
+.clearFix::after{
+    content: "";
+    clear: both;
+    display: table;
+}

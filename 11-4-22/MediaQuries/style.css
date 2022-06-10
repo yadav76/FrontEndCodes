@@ -1,0 +1,52 @@
+/* @media screen and (min-width: 100px){
+    .non-responsive{
+        width: 250px;
+        background-color: pink;
+        color: white;
+    }
+/* }  This is for min-width. At the same time we can use min or max width to avoid confusion. */
+
+.non-responsive{
+    width:900px;
+    background-color: aqua;
+}
+
+@media screen and (max-width: 800px){
+    .non-responsive{
+        width: 500px;
+        background-color: blueviolet;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .non-responsive{
+        width: 100%;
+        background-color: red;
+        color: white;
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a{
+    display: block;
+    padding: 14px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+@media screen and (max-width: 600px){
+    .navbar a{
+        width: 100%;
+    }
+}
